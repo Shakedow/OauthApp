@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>OAuth Learn that Sheet</title>
-
-    <style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OAuth Tutorials</title>
+        <style>
             body{
                 font-family: arial;
                 margin: 0;
@@ -38,18 +37,25 @@
                 color: #333;
             }
         </style>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/auth/logout">Logout</a></li>
-        <li><a href="/auth/login">Login</a></li>
-        <li><a href="/">Homepage</a></li>
-      </ul>
-    </nav>
-    <header><h1>Shot Out to the netninja</h1>
-      <h2>HomePage</h2>
-      </header>
-      <main><p>Probably The Best Tut out there ill Be the judge of that</p></main>
-      </body>
-      </html>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <% if (user) { %>
+                <li><a href="/auth/logout">Log out</a></li>
+                <% } else { %>
+                <li><a href="/auth/login">Login</a></li>
+                <% } %>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Net Ninja OAuth Tut's</h1>
+            <h2>Homepage</h2>
+        </header>
+        <main>
+            <p>Probably the best OAuth tutorials on the planet :)</p>
+        </main>
+    </body>
+</html>

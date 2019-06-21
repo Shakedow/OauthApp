@@ -1,7 +1,6 @@
 {
   "name": "OauthApp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -18,5 +17,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakedow/OauthApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shakedow/OauthApp/issues"
+  },
+  "homepage": "https://github.com/Shakedow/OauthApp#readme",
+  "description": ""
 }
